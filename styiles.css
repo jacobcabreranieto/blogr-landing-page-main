@@ -67,7 +67,7 @@ main {
 
 .container-header {
   padding-bottom: 10rem;
-  background-image: url(../images/bg-pattern-intro.svg),
+  background-image: url(/images/bg-pattern-intro.svg),
     linear-gradient(90deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
   background-repeat: no-repeat;
   background-size: 160%;
