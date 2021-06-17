@@ -1,7 +1,7 @@
 :root {
-  --size-text: 0.8rem;
-  --size-title: 3rem;
-  --size-subtitle: 1.4rem;
+  --size-text: 1rem;
+  --size-title: 2.5rem;
+  --size-subtitle: 1.5rem;
   --size-numbers: 2rem;
 
   --color-primary: #fafaf7;
@@ -123,109 +123,145 @@ main {
 
 /*Header end*/
 
-/*General content*/
+/*General content Desing start*/
+
+.h1 {
+  font-size: var(--size-title);
+  color: var(--color-accent);
+  text-align: center;
+  margin-top: 10rem;
+  padding: 3rem 1.5rem;
+  font-weight: bold;
+}
 
 .designed-container {
   display: flex;
-  flex-direction: column;
-  background-image: url(./images/illustration-editor-desktop.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right;
-  padding: 13%;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
 }
 
-.designed-title {
-  color: var(--color-accent);
-  font-size: 2.2rem;
-  text-align: center;
-  font-weight: bold;
-  padding-top: 8rem;
+.design-image {
+  width: 50%;
+  position: absolute;
+  right: -14%;
 }
 
-.paragraph {
-  padding: 1rem;
+.desktop-image {
+  max-width: 100%;
+  max-height: 100%;
 }
 
-.subtitle {
-  color: var(--color-accent);
+.desing-content {
+  width: 50%;
+  min-width: 25rem;
+  max-width: 100%;
+  padding: 3rem 2rem;
+}
+
+.h3 {
   font-size: var(--size-subtitle);
-  padding-bottom: 1rem;
+  color: var(--color-accent);
   font-weight: bold;
+  padding: 2rem 0rem 1.5rem 0rem;
 }
 
-.text {
-  color: var(--color-black);
+.desing-paragraph {
   font-size: var(--size-text);
-  line-height: 1.6;
-  padding-bottom: 1rem;
+  color: var(--color-black);
 }
+
+/*General content Desing end*/
 
 /*Phones Start*/
 
-.phones-container {
+.phones-section {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  padding: 10%;
 }
-
-
 
 .container-purple {
   background-color: var(--color-dark);
+  position: absolute;
+  width: 100%;
+  border-radius: 0rem 3rem 0rem 3rem;
+  padding: 4rem 0rem 4rem 0rem;
   background-image: url(./images/bg-pattern-circles.svg);
   background-repeat: no-repeat;
   background-position: left;
-  background-size: 70%;
-  border-radius: 0rem 4rem 0rem 4rem;
-  width: 100%;
-  height: 50%;
-  position: absolute;
-  z-index: -1;
+  background-size: 50%;
 }
 
-.sub-phones {
-  color: var(--color-primary);
+.phones-text {
+  padding: 2rem;
+  position: relative;
+  left: 50%;
+}
+
+.h2 {
   font-size: var(--size-subtitle);
-  padding-bottom: 1rem;
+  color: var(--color-primary);
   font-weight: bold;
+  padding: 1rem 0rem 1rem 0rem;
 }
 
-.text-phones {
-  color: var(--color-primary);
+.phones-paragraph {
   font-size: var(--size-text);
-  line-height: 1.6;
+  color: var(--color-primary);
+}
+
+.phones-img-container {
+  z-index: 1;
 }
 
 /*Phones end*/
 
-.designed-container-left {
+/*General content start*/
+
+.general-container {
   display: flex;
-  flex-direction: column;
-  background-image: url(./images/illustration-laptop-desktop.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: left;
-  text-align: right;
-  padding: 13%;
+  width: 100%;
+  align-items: center;
+  margin: 8rem 0rem 8rem 0rem;
 }
 
+.left-image {
+  width: 50%;
+  position: absolute;
+  left: -14%;
+}
+
+.laptop-image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.general-content {
+  position: relative;
+  width: 100%;
+  min-width: 25rem;
+  max-width: 100%;
+  padding: 3rem 1.5rem;
+  left: 50%;
+}
 /*Footer-start*/
 
 .container-footer {
+  padding: 2rem 0rem 2rem 0rem;
   border-radius: 0rem 5rem 0rem 0rem;
   background-color: var(--color-black);
 }
 
 .nav-footer {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   padding: 3rem;
 }
 
 .nav-list {
   font-size: var(--size-text);
+  line-height: 2rem;
+  margin-bottom: 1rem;
 }
 
 .nav-title-footer {
@@ -238,4 +274,34 @@ main {
 
 /*Footer end*/
 
+/*queries*/
 
+@media only screen and (max-width: 1000px) {
+  .h3 {
+    font-size: 1.2rem;
+  }
+
+  body {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .nav-footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .design-image {
+    position: static;
+    width: 100%;
+  }
+
+  .left-image {
+    position: static;
+    width: 100%;
+  }
+
+  .general-content {
+    position: static;
+  }
+}
