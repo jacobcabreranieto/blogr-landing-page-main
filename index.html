@@ -4,126 +4,124 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blogr landing page</title>
     <link rel="stylesheet" href="./styiles.css" />
+    <title>Blogr Landing page</title>
   </head>
   <body>
-    <header class="container-header">
-      <nav class="nav-container">
-        <div class="logo">
-          <img src="./images/logo.svg" alt="logo-Blogr" />
+    <header class="header-container">
+      <div class="nav-container">
+        <div class="general-nav">
+          <nav class="nav">
+            <img class="logo-img" src="./images/logo.svg" alt="" />
+            <a class="nav-item" href="#"
+              >Product <img src="./images/icon-arrow-light.svg" alt=""
+            /></a>
+            <a class="nav-item" href="#"
+              >Company <img src="./images/icon-arrow-light.svg" alt=""
+            /></a>
+            <a class="nav-item" href="#"
+              >Connect <img src="./images/icon-arrow-light.svg" alt=""
+            /></a>
+          </nav>
+          <div class="header-buttons">
+            <a class="button" href="#">Login</a>
+            <a class="button" href="#">Sing Up</a>
+          </div>
         </div>
-        <div class="nav-menu">
-          <a class="nav-item" href="#"
-            >Product <img src="./images/icon-arrow-light.svg" alt=""
-          /></a>
-          <a class="nav-item" href="#"
-            >Company <img src="./images/icon-arrow-light.svg" alt=""
-          /></a>
-          <a class="nav-item" href="#"
-            >Connect <img src="./images/icon-arrow-light.svg" alt=""
-          /></a>
-        </div>
-        <div>
-          <a class="button" href="#">Login</a>
-          <a class="button" href="#">SingUp</a>
-        </div>
-      </nav>
-
-      <div class="slogan">
-        <h2 class="slogan-tittle">A modern publishing platform</h2>
-        <br />
-        <h2 class="slogan-subtittle">
-          Grow your audience and build your online brand
-        </h2>
+      </div>
+      <div class="slogan-container">
+        <h1 class="h1">A modern publishing platform</h1>
+        <p class="paragraph-header">
+          Grow your audience and biuld your online brand
+        </p>
         <div class="slogan-buttons">
-          <a class="button" href="#">Start for Free</a>
-          <a class="button" href="#">Learn More</a>
+          <a class="button" href="#">Login</a>
+          <a class="button" href="#">Sing Up</a>
         </div>
       </div>
     </header>
-
-    <main class="container-wide">
-      <h1 class="h1">Designed for the future</h1>
-      <section class="designed-container">
-        <div class="design-image">
-          <img
-            class="desktop-image"
-            src="./images/illustration-editor-desktop.svg"
-            alt=""
-          />
-        </div>
-        <div class="desing-content">
+    <section class="designed-container">
+      <h2 class="h2">Designed for the future</h2>
+      <div class="designed-content">
+        <div class="designed-text">
           <h3 class="h3">introducing an extensible editor</h3>
-          <p class="desing-paragraph">
+          <p class="paragraph">
             Blogr features an exceedingly intuitive interface which lets you
             focus <br />
             on one thing: creating content. The editor supports management of
-            <br />
-            multiple blogs and allows easy manipulation of embeds such as
+            <br />multiple blogs and allows easy manipulation of embeds such as
             images, <br />
-            videos, and Markdown. Extensibility with plugins and themes provide
-            <br />easy ways to add functionality or change the looks of a blog.
+            videos, and markdown. Extensibility with plugins and themes provide
+            <br />easy ways to add functionality or change the looks of a blog
           </p>
           <h3 class="h3">Robust content management</h3>
-          <p class="desing-paragraph">
+          <p class="paragraph">
             Flexible content management enables users to easily move through
             <br />
             posts. Increase the usability of your blog by adding costumized
             <br />
             categories, sections, format, or flow. With this functionality,
-            youre in <br />full control
+            youre in <br />full control.
           </p>
         </div>
-      </section>
-    </main>
-
-    <section class="phones-section">
-      <div class="container-purple">
-        <div class="phones-text">
-          <h2 class="h2">State of the Art infrastructure</h2>
-          <p class="phones-paragraph">
-            With reliability and speed in mind, worldwide data centers provide
-            the
-            <br />
-            backbone for ultra-fast connectivity. This ensures your site will
-            load
-            <br />instantly, no matter where your readers are, keeping your site
-            <br />competitive.
-          </p>
+        <div class="img">
+          <img
+            class="img-desktop"
+            src="./images/illustration-editor-desktop.svg"
+            alt=""
+          />
         </div>
-      </div>
-      <div class="phones-img-container">
-        <img class="phones-img" src="./images/illustration-phones.svg" alt="" />
       </div>
     </section>
 
-    <section class="container-wide">
-      <div class="general-container">
-        <div class="left-image">
+    <section class="phones-section">
+      <div class="phones-content">
+        <div class="img">
           <img
-            class="laptop-image"
+            class="img-phones"
+            src="./images/illustration-phones.svg"
+            alt=""
+          />
+        </div>
+        <div class="phones-paragraps">
+          <h4 class="h4">State of the Art insfrastructure</h4>
+          <p class="paragraph-phones">
+            With reliability and speed in mind, worldwide data centers provide
+            the
+            <br />backbone for ultra-fast connectivity. This ensures your site
+            will load <br />instantly, no matter where your readers are, keeping
+            your site <br />competitive.
+          </p>
+        </div>
+        <div class="container-purple"></div>
+      </div>
+    </section>
+
+    <section class="designed-container">
+      <div class="designed-content">
+        <div class="img">
+          <img
+            class="img-desktop"
             src="./images/illustration-laptop-desktop.svg"
             alt=""
           />
         </div>
-        <div class="general-content">
+        <div class="designed-text">
           <h3 class="h3">Free, open, simple</h3>
-          <p class="desing-paragraph">
-            Blogr is a free and open source application backed by a large <br />
-            community of helpful developers. It supports features such as code
-            <br />
-            syntax highlighting. RSS feeds, social media integration,
+          <p class="paragraph">
+            Blogr is a free an open source application backed by a large <br />
+            community of helpful developers.It supports features such as code
+            <br />syntax highlighting, RSS feeds, social media integration,
             third-party <br />
-            coomenting tools,and works seamlessly with Google Analitycs. the
-            <br />architecture is clean and is relatively easy to learn.
+            commenting tools, and works seamlessly with Google Analytics, The
+            <br />architecture is clean and is relatively easy to learn
           </p>
           <h3 class="h3">Powerful tooling</h3>
-          <p class="desing-paragraph">
-            Batteries incluided. We biult a simple and strightfoward Cli tool
-            thath
+          <p class="paragraph">
+            Batteries included. We biult a simple and straightfoward CLI tool
+            that
             <br />
-            makes costumization and deployment a breeze, but capable of
+            makes costumization and deployment a breeze, but capablr of
             <br />
             producing even the most complicated sites.
           </p>
@@ -134,7 +132,7 @@
     <footer class="container-footer">
       <nav class="nav-footer">
         <div class="logo">
-          <img src="./images/logo.svg" alt="logo-Blogr" />
+          <img class="logo-img" src="./images/logo.svg" alt="logo-Blogr" />
         </div>
         <ol class="nav-list">
           <li class="nav-title-footer"><a href="">Product</a></li>
@@ -159,5 +157,9 @@
         </ol>
       </nav>
     </footer>
+
+
+    
+  </footer>
   </body>
 </html>
